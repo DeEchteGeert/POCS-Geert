@@ -67,7 +67,7 @@ function updateProductsInCart(product) { // 2
 	productsInCart.push(product);
 }
 
-
+// Voor elk item word hier in de winkelwagen toegevoegd. Hiervoor word verschillende informatie opgevraagd zoals de naam en de prijs.
 
 products.forEach(item => {   // 1
 	item.addEventListener('click', (e) => {
@@ -90,6 +90,8 @@ products.forEach(item => {   // 1
 	});
 });
 
+// Met deze functie kun je meer of minder items in de winkelwagen toevoegen door de plus of min knop
+
 parentElement.addEventListener('click', (e) => { // Last
 	const isPlusButton = e.target.classList.contains('button-plus');
 	const isMinusButton = e.target.classList.contains('button-minus');
@@ -102,9 +104,15 @@ parentElement.addEventListener('click', (e) => { // Last
 				else if (isMinusButton) {
 					productsInCart[i].count -= 1
 				}
+
+				// Hier word de prijs berekend door het aantal 
+
 				productsInCart[i].price = productsInCart[i].basePrice * productsInCart[i].count;
 
 			}
+
+			// Als je minder dan 1 item hebt dan word de winkelwagen leeggemaakt
+
 			if (productsInCart[i].count <= 0) {
 				productsInCart.splice(i, 1);
 			}
