@@ -8,3 +8,47 @@
 .header-right{
     justify-content: right;
 }
+
+.btn{
+    background-color: #4CAF50; /* Green */
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 5px;
+}
+
+.card{
+    padding: 10px;
+    margin: 10px;
+    background-color: gray;
+    border-radius: 5px;
+    max-width: fit-content;
+    font-family: monospace;
+    color: white;
+}
+
+.title{
+    font-weight: bold;
+    font-size: x-large;
+}
+
+.price{
+    margin: 2px;
+}
+
+#buy{
+    margin-top: 2px;
+    padding: 2px 4px;
+    border: none;
+    font-family: monospace;
+    font-weight: bold;
+    width: fit-content;
+}
+
+.row{
+    display: flex;
+}
