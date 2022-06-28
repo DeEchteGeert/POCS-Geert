@@ -1,0 +1,10 @@
+.header{
+    display: flex;
+    justify-content: space-between;
+    background-color: gray;
+    padding: 10px;
+}
+
+.header-right{
+    justify-content: right;
+}
